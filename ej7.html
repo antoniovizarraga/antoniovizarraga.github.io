@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Juan Palomo me chupas el lomo</title>
+</head>
+<body>
+<a href="index.html">Volver al índice</a>
+	<br><br>
+	<form action="https://lm.ciclo.iesnervion.es/" method="post">
+	<fieldset>
+		<legend>Receta</legend>
+		<label for="nombre">Nombre de la receta:</label>
+		<input type="text" name="nombre" id="nombre" required>
+		<br><br>
+		<label for="correo">Correo:</label>
+		<input type="email" name="correo" id="correo" required>
+		<br><br>
+		<label for="momento">Momento para comer:</label>
+		<input type="checkbox" name="momento[]" id="momento" value="Desayuno">Desayuno
+		<input type="checkbox" name="momento[]" id="momento" value="Almuerzo">Almuerzo
+		<input type="checkbox" name="momento[]" id="momento" value="Merienda">Merienda
+		<input type="checkbox" name="momento[]" id="momento" value="Cena">Cena
+		<input type="checkbox" name="momento[]" id="momento" value="Postre">Postre
+		<br><br>
+		<label for="ingredientes">Escoge los ingredientes:</label>
+		<select multiple name="ingredientes[]" id="ingredientes">
+			<optgroup label="Carne">
+				<option>Buey</option>
+				<option>Cerdo</option>
+				<option>Conejo</option>
+			</optgroup>
+
+			<optgroup label="Pescado">
+				<option>Pez Espada</option>
+				<option>Trucha</option>
+			</optgroup>
+
+
+			<optgroup label="Fruta">
+				<option>Manzana</option>
+				<option>Pera</option>
+				<option>Tomate</option>
+			</optgroup>
+
+			<optgroup label="Verdura">
+				<option>Lechuga</option>
+				<option>Hortaliza</option>
+				<option>Zanahoria</option>
+			</optgroup>
+
+		</select>
+
+		<br><br>
+
+		<label>Tiempo de preparación</label>
+		<br>
+		<input type="radio" name="horas" id="0horas" value="0horas">
+		<label for="0horas">0 horas</label>
+		<input type="radio" name="horas" id="1horas" value="1hora">
+		<label for="1horas">1 hora</label>
+		<input type="radio" name="horas" id="2horas" value="2horas">
+		<label for="2horas">2 horas</label>
+		<br><br>
+		<input type="radio" name="minutos" id="15minutos" value="15minutos">
+		<label for="15minutos">15 minutos</label>
+		<input type="radio" name="minutos" id="30minutos" value="30minutos">
+		<label for="30minutos">30 minutos</label>
+		<input type="radio" name="minutos" id="45minutos" value="45minutos">
+		<label for="45minutos">45 minutos</label>
+
+		<br><br>
+
+		<label>me repites ese numerín?</label>
+		<img src="img/numerin.jpg" height="100">
+		<br>
+		<input type="number" name="numerosecreto" value="33" readonly>
+		<br><br>
+		<input type="file" name="foto">
+		<br><br>
+		<button type="submit">Enviar</button>
+	</fieldset>
+
+
+
+
+
+	</form>
+</body>
+</html>

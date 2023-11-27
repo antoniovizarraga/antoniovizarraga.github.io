@@ -9,9 +9,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-<div style="border: 2px solid black; margin: 10px; width: 350px; display: flex;">
+<div style="border: 2px solid black; margin: 10px; width: 350px; display: flex;" id="div">
 	<p style="margin: 20px; padding: 10px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 </div>
+
+<button id="button"><a href="https://blogs.mtdv.me/articles/OSZpKwgrHY">¡Clíckame!</a></button>
+
 </body>
 <style type="text/css">
 	@media screen and (max-width: 600px) {
@@ -30,8 +33,79 @@
 		div {
 			background-color: firebrick;
 		}
+		#div {
+			transition-duration: 0.5s;
+			
+		}
+		#div:hover {
+			background-color: gold;
+			border: 4px solid black;
+		}
 		p {
 			font-family: 'Saira Extra Condensed', sans-serif;
+		}
+
+		#button {
+			transition-duration: 0.5s;
+			width: 8em;
+			padding: 5px;
+			border: 1px solid black;
+			background-color: springgreen;
+			border-radius: 15px;
+		}
+		#button:hover {
+			animation: rainbow 0.5s linear infinite;
+			background-color: darkgoldenrod;
+		}
+
+		@keyframes rainbow {
+			100%,0% {
+				border: 2px solid rgb(255,0,0);
+			}
+
+			8% {
+				border: 2px solid rgb(255,127,0);
+			}
+
+			16% {
+				border: 2px solid rgb(255,255,0);
+			}
+
+			25% {
+				border: 2px solid rgb(127,255,0);
+			}
+
+			33% {
+				border: 2px solid rgb(0,255,0);
+			}
+
+			41% {
+				border: 2px solid rgb(0,255,127);
+			}
+
+			50% {
+				border: 2px solid rgb(0,255,255);
+			}
+
+			58% {
+				border: 2px solid rgb(0,127,255);
+			}
+
+			66% {
+				border: 2px solid rgb(0,0,255);
+			}
+
+			75% {
+				border: 2px solid rgb(127,0,255);
+			}
+
+			83% {
+				border: 2px solid rgb(255,0,255);
+			}
+			91% {
+				border: 2px solid rgb(255,0,127);
+			}
+
 		}
 	}
 		

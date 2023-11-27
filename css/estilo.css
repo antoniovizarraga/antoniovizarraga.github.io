@@ -1,3 +1,16 @@
+html {
+	background-color: #111;
+}
+
+p, ul, ol {
+	color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+	font-family: sans-serif;
+}
+
 a {
 	padding: 12px;
 	background-color: lightblue;
@@ -5,4 +18,11 @@ a {
 	border: 1px solid black;
 	border-radius: 4px;
 	font-style: normal;
+	text-decoration: none;
+}
+
+div {
+	margin: 35px;
+	padding: 10px;
+	border: 1px solid gold;
 }
